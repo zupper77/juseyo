@@ -30,8 +30,8 @@
     <!-- myBATIS Master -->
     <bean id="sqlSessionFactoryMaster" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSourceMaster" />
-        <property name="configLocation" value="classpath:com/wemakeprice/commons/lib/mybatis/config-mapper.xml" />
-        <property name="mapperLocations" value="classpath*:com/wemakeprice/**/sql/*.xml" />
+        <property name="configLocation" value="classpath:com/jeseyo/commons/lib/mybatis/config-mapper.xml" />
+        <property name="mapperLocations" value="classpath*:com/jeseyo/**/sql/*.xml" />
     </bean>
 
     <bean id="sqlSessionMaster" class="org.mybatis.spring.SqlSessionTemplate">
@@ -60,8 +60,8 @@
     <!-- myBATIS Master -->
     <bean id="sqlSessionFactorySlave" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSourceSlave" />
-        <property name="configLocation" value="classpath:com/wemakeprice/commons/lib/mybatis/config-mapper.xml" />
-        <property name="mapperLocations" value="classpath*:com/wemakeprice/**/sql/*.xml" />
+        <property name="configLocation" value="classpath:com/jeseyo/commons/lib/mybatis/config-mapper.xml" />
+        <property name="mapperLocations" value="classpath*:com/jeseyo/**/sql/*.xml" />
     </bean>
 
     <!-- <bean id="dataSourceSlave" class="org.springframework.jndi.JndiObjectFactoryBean"> <property name="jndiName" value="java:jboss/datasources/MysqlSlaveDS" /> </bean> -->
@@ -88,8 +88,8 @@
     <!-- myBATIS SMS -->
     <bean id="sqlSessionFactorySMS" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSourceSMS" />
-        <property name="configLocation" value="classpath:com/wemakeprice/commons/lib/mybatis/config-mapper.xml" />
-        <property name="mapperLocations" value="classpath*:com/wemakeprice/**/sql/*.xml" />
+        <property name="configLocation" value="classpath:com/jeseyo/commons/lib/mybatis/config-mapper.xml" />
+        <property name="mapperLocations" value="classpath*:com/jeseyo/**/sql/*.xml" />
     </bean>
 
     <bean id="sqlSessionSMS" class="org.mybatis.spring.SqlSessionTemplate">
@@ -100,24 +100,24 @@
         <constructor-arg index="0" ref="sqlSessionFactorySlave" />
     </bean>
 
-    <bean id="userSqlSessionMaster" name="userSqlSessionMaster" class="com.wemakeprice.commons.lib.mybatis.UserSqlSessionMaster">
+    <bean id="userSqlSessionMaster" name="userSqlSessionMaster" class="com.jeseyo.commons.lib.mybatis.UserSqlSessionMaster">
         <constructor-arg index="0" ref="sqlSessionMaster" />
     </bean>
 
-    <bean id="userSqlSessionMasterSelect" name="userSqlSessionMasterSelect" class="com.wemakeprice.commons.lib.mybatis.UserSqlSessionMasterSelect">
+    <bean id="userSqlSessionMasterSelect" name="userSqlSessionMasterSelect" class="com.jeseyo.commons.lib.mybatis.UserSqlSessionMasterSelect">
         <constructor-arg index="0" ref="sqlSessionMaster" />
     </bean>
 
-    <bean id="userSqlSessionSlave" name="userSqlSessionSlave" class="com.wemakeprice.commons.lib.mybatis.UserSqlSessionSlave">
+    <bean id="userSqlSessionSlave" name="userSqlSessionSlave" class="com.jeseyo.commons.lib.mybatis.UserSqlSessionSlave">
         <constructor-arg index="0" ref="sqlSessionSlave" />
     </bean>
 
-    <bean id="userSqlSessionSMS" name="userSqlSessionSMS" class="com.wemakeprice.commons.lib.mybatis.UserSqlSessionSMS">
+    <bean id="userSqlSessionSMS" name="userSqlSessionSMS" class="com.jeseyo.commons.lib.mybatis.UserSqlSessionSMS">
         <constructor-arg index="0" ref="sqlSessionSMS" />
     </bean>
 
     <!-- db용도별 접속을 위한 factory -->
-    <bean id="userSqlSessionFactory" name="userSqlSessionFactory" class="com.wemakeprice.commons.lib.mybatis.UserSqlSessionFactory">
+    <bean id="userSqlSessionFactory" name="userSqlSessionFactory" class="com.jeseyo.commons.lib.mybatis.UserSqlSessionFactory">
         <constructor-arg index="0" ref="userSqlSessionMaster" />
         <constructor-arg index="1" ref="userSqlSessionSlave" />
         <constructor-arg index="2" ref="userSqlSessionMasterSelect" />
