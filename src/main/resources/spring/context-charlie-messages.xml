@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+        
+    <!-- 기본 메시지 설정 ( 3팀용 )  --> 
+    <bean id="MessageCharlieServiceImpl" class="com.juseyo.commons.lib.messages.packages.MessageCharlieServiceImpl" destroy-method="destroy">
+        <property name="properties"> 
+            <map> 
+                <!-- 기본 공통 메시지 -->
+                <entry key="3001" value="파라미터가 존재하지 않습니다." />
+                <entry key="3002" value="입력파라미터 오류입니다. " />
+                <entry key="3003" value="입력파라미터(Non-JSON) 오류입니다. " />
+                <entry key="3004" value="DB처리에 오류가 발생하였습니다." />
+                <entry key="3005" value="인증이 필요합니다." />
+                <entry key="3006" value="권한이 없습니다." />
+                <entry key="3000" value="알 수 없는 오류가 발생하였습니다. 잠시후 다시 시도하여 주십시요. " />
+                <!-- 2팀용 공통 메시지 ( K000 ~ O9999 ) -->
+            </map>
+        </property>
+    </bean> 
+ 
+  
+</beans>

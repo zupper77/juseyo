@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sql.com.wemakeprice.commons.sms">
+	<insert id="insertMsgData" parameterType="hashmap">
+		INSERT INTO
+			MSG_DATA 
+				(CUR_STATE, CALL_TO, CALL_FROM, SMS_TXT, MSG_TYPE) 
+			VALUES 
+				(0, #{callTo}, #{callFrom}, #{smsTxt}, #{msgType})
+	</insert>
+</mapper>
