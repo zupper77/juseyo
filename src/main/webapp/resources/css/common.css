@@ -1,0 +1,1591 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: dotum; /* 120612 컬러값 변경 */
+    color: #333;
+    background: none;
+}
+
+hr, legend, .hidden {
+    display: none;
+}
+
+.hiddeni {
+    display: none !important;
+}
+
+fileset, img, fieldset {
+    border: medium none;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    padding: 0;
+    border-spacing: 0px;
+    border: 0;
+    border-collapse: collapse;
+}
+
+caption {
+    display: none;
+}
+
+a {
+    outline: none;
+}
+
+th, td {
+    padding: 0px;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+a.tunder:link {
+    color: #666;
+    text-decoration: none !important;
+}
+
+a.tunder:visited {
+    color: #666;
+    text-decoration: none !important;
+}
+
+a.tunder:active {
+    color: #666;
+    text-decoration: none !important;
+}
+
+a.tunder:hover {
+    color: #333;
+    text-decoration: underline !important;
+}
+
+.fjustify {
+    text-align: justify;
+}
+
+.cursoron {
+    cursor: pointer;
+}
+
+.fnormal {
+    font-weight: normal;
+}
+
+.border0 {
+    border: 0 !important;
+}
+
+.bt0 {
+    border-top: 0 !important;
+}
+
+.br0 {
+    border-right: 0 !important;
+}
+
+.bb0 {
+    border-bottom: 0 !important;
+}
+
+.tunder {
+    text-decoration: underline;
+}
+
+.backfff {
+    background: #fff;
+}
+
+.backno {
+    background: url() !important;
+}
+
+.over_hidden {
+    overflow: hidden;
+}
+
+/*�ڰ�*/
+.let0 {
+    letter-spacing: 0pt;
+}
+
+.let02 {
+    letter-spacing: -0.2pt;
+}
+
+/* ��ġ */
+.fleft {
+    display: inline;
+    float: left;
+}
+
+.fright {
+    display: inline;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left !important;
+}
+
+.fr {
+    float: right !important;
+}
+
+/* �������� */
+.vm {
+    vertical-align: middle;
+}
+
+.vt {
+    vertical-align: top;
+}
+
+.vb {
+    vertical-align: bottom;
+}
+
+/* ���� */
+.tleft {
+    text-align: left !important;
+}
+
+.tcenter {
+    text-align: center !important;
+}
+
+.tright {
+    text-align: right !important;
+}
+
+/* ��Ʈ���� */
+.fcblue {
+    color: #007fc8 !important;
+}
+
+.fcred {
+    color: red !important;
+}
+
+.fc333 {
+    color: #333 !important;
+}
+
+.fc747 {
+    color: #747474 !important;
+}
+
+.fcf54 {
+    color: #f54d2c !important;
+}
+
+/* 120612 */
+.fcsblue {
+    color: #0095af !important;
+}
+
+.fcdred {
+    color: #dc0000 !important;
+}
+
+.fc000 {
+    color: #000 !important;
+}
+
+.fcbsilver {
+    color: #dfdfdf !important;
+}
+
+.fc888 {
+    color: #888 !important;
+}
+
+.fc666 {
+    color: #666 !important;
+}
+
+.ftm {
+    font-family: Trebuchet MS !important;
+}
+
+.ftv {
+    font-family: Verdana !important;
+}
+
+.fbold {
+    font-weight: bold;
+}
+
+.fb {
+    font-weight: bold;
+}
+
+.f8 {
+    font-size: 11px;
+}
+
+.f11 {
+    font-size: 11px !important;
+}
+
+.f12 {
+    font-size: 12px !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.line01 {
+    border-top: 1px solid #f2f3f4;
+}
+
+.h240 {
+    height: 240px;
+}
+
+.green_txt {
+    color: #64954b !important;
+}
+
+/* 120605 클래스 추가 */
+.lineh15 {
+    line-height: 15px;
+}
+
+.lineh17 {
+    line-height: 17px;
+}
+
+.lineh18 {
+    line-height: 18px;
+}
+
+.lineh20 {
+    line-height: 20px;
+}
+
+.bgpoint02 {
+    width: 692px;
+    height: 20px;
+    background: url('../images/short/rate_table_bg.gif') no-repeat 0 bottom;
+}
+
+.box001 {
+    border: 7px solid #fafaf7;
+    width: 678px;
+    line-height: 18px;
+}
+
+.box002 {
+    border: 7px solid #fafaf7;
+    width: 568px;
+    line-height: 18px;
+    background: #fff;
+    font-size: 11px;
+    letter-spacing: -0.3pt;
+}
+
+/* �� �±� */
+input {
+    padding: 1px 1px 1px 7px;
+    vertical-align: middle;
+    font-size: 11px;
+}
+
+input[type=radio] {
+    padding: 0;
+    margin: 0 3px 3px 0;
+}
+
+textarea {
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: left;
+    color: #777;
+}
+
+select {
+    padding: 2px 0 2px 7px;
+    vertical-align: middle;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+/* ���� */
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.mb2 {
+    margin-bottom: 2px !important;
+}
+
+.mb3 {
+    margin-bottom: 3px !important;
+}
+
+.mb5 {
+    margin-bottom: 5px !important;
+}
+
+.mb10 {
+    margin-bottom: 10px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.mb25 {
+    margin-bottom: 25px !important;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.mb33 {
+    margin-bottom: 33px !important;
+}
+
+/* 140218 추가 */
+.mb60 {
+    margin-bottom: 60px !important;
+}
+
+.mb100 {
+    margin-bottom: 100px !important;
+}
+
+.mr0 {
+    margin-right: 0 !important;
+}
+
+.mr1 {
+    margin-right: 1px !important;
+}
+
+.mr2 {
+    margin-right: 2px !important;
+}
+
+.mr4 {
+    margin-right: 4px !important;
+}
+
+.mr5 {
+    margin-right: 5px !important;
+}
+
+.mr8 {
+    margin-right: 8px !important;
+}
+
+.mr10 {
+    margin-right: 10px !important;
+}
+
+.mr20 {
+    margin-right: 20px !important;
+}
+
+.mr30 {
+    margin-right: 30px !important;
+}
+
+.mr40 {
+    margin-right: 40px !important;
+}
+
+.mr43 {
+    margin-right: 43px !important;
+}
+
+.mr50 {
+    margin-right: 50px !important;
+}
+
+.mr55 {
+    margin-right: 55px !important;
+}
+
+/* 140220 추가 */
+.mr60 {
+    margin-right: 60px !important;
+}
+
+.mt_3 {
+    margin-top: -3px !important;
+}
+
+.mt_5 {
+    margin-top: -5px !important;
+}
+
+.mt_10 {
+    margin-top: -10px !important;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.mt1 {
+    margin-top: 1px !important;
+}
+
+.mt2 {
+    margin-top: 2px !important;
+}
+
+.mt3 {
+    margin-top: 3px !important;
+}
+
+.mt4 {
+    margin-top: 4px !important;
+}
+
+.mt5 {
+    margin-top: 5px !important;
+}
+
+.mt6 {
+    margin-top: 6px !important;
+}
+
+.mt7 {
+    margin-top: 7px !important;
+}
+
+.mt8 {
+    margin-top: 8px !important;
+}
+
+.mt9 {
+    margin-top: 9px !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt12 {
+    margin-top: 12px !important;
+}
+
+.mt13 {
+    margin-top: 15px !important;
+}
+
+.mt15 {
+    margin-top: 15px !important;
+}
+
+.mt17 {
+    margin-top: 17px !important;
+}
+
+.mt18 {
+    margin-top: 18px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mt25 {
+    margin-top: 25px !important;
+}
+
+.mt30 {
+    margin-top: 30px !important;
+}
+
+.mt35 {
+    margin-top: 35px !important;
+}
+
+.mt40 {
+    margin-top: 40px !important;
+}
+
+.mt50 {
+    margin-top: 50px !important;
+}
+
+.mt55 {
+    margin-top: 55px !important;
+}
+
+.mt60 {
+    margin-top: 60px !important;
+}
+
+.mt70 {
+    margin-top: 70px !important;
+}
+
+.mt80 {
+    margin-top: 80px !important;
+}
+
+.mt100 {
+    margin-top: 100px !important;
+}
+
+.mt240 {
+    margin-top: 240px !important;
+}
+
+.ml0 {
+    margin-left: 0px !important;
+}
+
+.ml1 {
+    margin-left: 1px !important;
+}
+
+.ml2 {
+    margin-left: 2px !important;
+}
+
+.ml3 {
+    margin-left: 3px !important;
+}
+
+.ml4 {
+    margin-left: 4px !important;
+}
+
+.ml5 {
+    margin-left: 5px !important;
+}
+
+.ml6 {
+    margin-left: 6px !important;
+}
+
+.ml7 {
+    margin-left: 7px !important;
+}
+
+.ml10 {
+    margin-left: 10px !important;
+}
+
+.ml12 {
+    margin-left: 12px !important;
+}
+
+.ml15 {
+    margin-left: 15px !important;
+}
+
+.ml20 {
+    margin-left: 20px !important;
+}
+
+.ml25 {
+    margin-left: 25px !important;
+}
+
+.ml27 {
+    margin-left: 27px !important;
+}
+
+.ml30 {
+    margin-left: 30px !important;
+}
+
+.ml35 {
+    margin-left: 35px !important;
+}
+
+/* 140218 수정 */
+.ml40 {
+    margin-left: 40px !important;
+}
+
+.ml50 {
+    margin-left: 50px !important;
+}
+
+.ml55 {
+    margin-left: 55px !important;
+}
+
+.ml60 {
+    margin-left: 60px !important;
+}
+
+.ml70 {
+    margin-left: 70px !important;
+}
+
+.ml80 {
+    margin-left: 80px !important;
+}
+
+.ml280 {
+    margin-left: 280px !important;
+}
+
+.ml110 {
+    margin-left: 110px !important;
+}
+
+/* 120604 추가 */
+.mt45 {
+    margin-top: 45px !important;
+}
+
+.mb45 {
+    margin-bottom: 45px !important;
+}
+
+/* //120604 추가 */
+.pb0 {
+    padding-bottom: 0 !important;
+}
+
+.pb10 {
+    padding-bottom: 10px !important;
+}
+
+.pr0 {
+    padding-right: 0 !important;
+}
+
+.pd15 {
+    padding: 15px;
+}
+
+.pd19 {
+    padding: 19px;
+}
+
+/* 120605 추가 */
+.pt8 {
+    padding-top: 8px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.txt_btn a {
+    display: inline-block;
+    background: #000;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1pt;
+    color: #fff;
+}
+
+.txt_btn a:hover {
+    background: #999999;
+    color: #fff;
+}
+
+.txt_btn2 {
+    display: inline-block;
+    background: #e9e9e9;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #747373 !important;
+}
+
+.txt_btn2 img {
+    padding: 0 3px 0 0;
+    vertical-align: middle !important;
+}
+
+.txt_btn2:hover {
+    color: #000 !important;
+}
+
+/* 120610 추가 */
+.bl_img {
+    vertical-align: top;
+    margin-top: 7px;
+}
+
+/* 140304 추가 */
+.back_txt {
+    text-indent: -15px;
+    padding-left: 15px;
+}
+
+/* ����¡ */
+.paging {
+    margin: 0 auto;
+    width: 470px;
+    margin: 40px auto;
+}
+
+.paging a {
+    float: left;
+    margin: 0 1px 0 1px;
+}
+
+.paging .num {
+    margin: 0 3px 0 0;
+}
+
+.paging .num a {
+    width: 30px;
+    height: 22px;
+    padding: 3px 0 0 0;
+    margin: 0;
+    background: #ffff;
+    color: #999;
+    text-align: center;
+    font-size: 16px;
+    border-right: 1px solid #e2e2e2;
+}
+
+.paging .num a.on, .paging .num a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.paging .num .end {
+    margin: 0 3px 0 0;
+}
+
+.paging2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.paging2 span a {
+    padding: 11px;
+    width: 28px;
+    font-size: 10px;
+    font-family: Verdana, dotum;
+    color: #888888;
+    background: url('../images/info/page_bg.gif');
+}
+
+.paging2 .hr {
+    font-weight: bold;
+    padding: 11px;
+    width: 28px;
+    font-size: 10px;
+    font-family: Verdana, dotum;
+    color: #DC0000;
+    background: url('../images/info/page_bg.gif');
+}
+
+#scrollbar1 {
+    width: 195px;
+    margin: 0;
+}
+
+#scrollbar1 .viewport {
+    width: 170px;
+    height: 141px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar1 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar1 .scrollbar {
+    background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar1 .track {
+    background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar1 .thumb {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar1 .thumb .end {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar1 .disable {
+    display: none;
+}
+
+#scrollbar2 {
+    width: 195px;
+    margin: 30px 0 0 0;
+}
+
+#scrollbar2 .viewport {
+    width: 170px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar2 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar2 .scrollbar {
+    background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar2 .track {
+    background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar2 .thumb {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar2 .thumb .end {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar2 .disable {
+    display: none;
+}
+
+#scrollbar3 {
+    width: 195px;
+    margin: 30px 0 0 0;
+}
+
+#scrollbar3 .viewport {
+    width: 170px;
+    height: 470px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar3 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar3 .scrollbar {
+    background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar3 .track {
+    background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar3 .thumb {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar3 .thumb .end {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar3 .disable {
+    display: none;
+}
+
+#scrollbar4 {
+    width: 195px;
+    margin: 0;
+}
+
+#scrollbar4 .viewport {
+    width: 170px;
+    height: 141px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar4 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar4 .scrollbar {
+    background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar4 .track {
+    background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar4 .thumb {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar4 .thumb .end {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar4 .disable {
+    display: none;
+}
+
+#scrollbar5 {
+    width: 195px;
+    margin: 0;
+}
+
+#scrollbar5 .viewport {
+    width: 170px;
+    height: 141px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar5 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar5 .scrollbar {
+    background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar5 .track {
+    background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar5 .thumb {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar5 .thumb .end {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar5 .disable {
+    display: none;
+}
+
+#scrollbar6 {
+    width: 820px;
+    padding: 20px 20px 20px 30px;
+}
+
+#scrollbar6 .viewport {
+    width: 790px;
+    height: 560px;
+    overflow: hidden;
+    position: relative;
+}
+
+#scrollbar6 .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#scrollbar6 .scrollbar {
+    background: transparent url(../images/bg-scrollbar-track-y.png) repeat-y 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#scrollbar6 .track {
+    background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height: 100%;
+    width: 13px;
+    position: relative;
+    padding: 0 1px;
+}
+
+#scrollbar6 .thumb {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+#scrollbar6 .thumb .end {
+    background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+    overflow: hidden;
+    height: 5px;
+    width: 25px;
+}
+
+#scrollbar6 .disable {
+    display: none;
+}
+
+/* 120610 추가요망 */
+.selectbox {
+    position: relative;
+    line-height: 18px;
+}
+
+/* 120610 추가요망 */
+.selectbox a.selectti {
+    position: relative;
+    height: 13px;
+    display: inline-block;
+    margin: 0 0 3px 0;
+    padding: 2px 0 3px 0;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    background: #fff url('../images/common/ico_down.gif') no-repeat 100% 8px;
+    color: #333;
+    cursor: pointer;
+    z-index: 300;
+    font-size: 11px;
+}
+
+/* 120610 추가요망 */
+.selectbox a.selectti .titxt {
+    display: inline-block;
+    padding: 0 15px 0 3px;
+    height: 16px;
+    font-size: 11px;
+    color: #acacac;
+}
+
+/* 120610 추가요망 */
+.selectslist {
+    display: none;
+    position: absolute;
+    top: 15px;
+    *top: 20px;
+    _top: 20px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 400;
+}
+
+/* 120610 추가요망 */
+.selectslist a {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* 120610 추가요망 */
+.selectslist a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* 120610 추가요망 */
+.selectslist a .txt {
+    display: block;
+    padding: 2px 0 2px 3px;
+}
+
+.selectbox {
+    position: relative;
+    line-height: 16px;
+}
+
+.selectbox a.selectti {
+    position: relative;
+    height: 13px;
+    display: inline-block;
+    margin: 0 0 3px 0;
+    padding: 2px 0 3px 0;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    background: #fff url('../images/common/ico_down.gif') no-repeat 100% 8px;
+    color: #333;
+    cursor: pointer;
+    z-index: 300;
+    font-size: 11px;
+}
+
+.selectbox a.selectti .titxt {
+    display: inline-block;
+    padding: 0 15px 0 3px;
+    height: 16px;
+    font-size: 11px;
+    color: #acacac;
+}
+
+.selectslist {
+    display: none;
+    position: absolute;
+    top: 15px;
+    *top: 20px;
+    _top: 20px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 400;
+}
+
+.selectslist a {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.selectslist a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.selectslist a .txt {
+    display: block;
+    padding: 2px 0 2px 3px;
+}
+
+.selectboxly1 {
+    z-index: 399;
+}
+
+.selectboxly2 {
+    z-index: 398;
+}
+
+.selectboxly3 {
+    z-index: 397;
+}
+
+.selectboxly4 {
+    z-index: 396;
+}
+
+.selectboxly5 {
+    z-index: 395;
+}
+
+.selectboxly6 {
+    z-index: 394;
+}
+
+.selectboxly7 {
+    z-index: 393;
+}
+
+.selectboxly8 {
+    z-index: 392;
+}
+
+.selectboxly9 {
+    z-index: 391;
+}
+
+.selectboxly10 {
+    z-index: 390;
+}
+
+.selectboxly11 {
+    z-index: 389;
+}
+
+.selectboxly12 {
+    z-index: 388;
+}
+
+.selectboxly13 {
+    z-index: 387;
+}
+
+.selectboxly14 {
+    z-index: 386;
+}
+
+.selectboxly15 {
+    z-index: 385;
+}
+
+.selectboxly16 {
+    z-index: 384;
+}
+
+.selectboxly17 {
+    z-index: 383;
+}
+
+.selectboxly18 {
+    z-index: 382;
+}
+
+.selectboxly19 {
+    z-index: 381;
+}
+
+.selectboxly20 {
+    z-index: 380;
+}
+
+.list001 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.list001 li {
+    background: url(../images/dot01.gif) no-repeat left 7px;
+    padding: 0 0 0 10px;
+    line-height: 20px;
+}
+
+.list001 .sj {
+    color: #56bcce;
+}
+
+.list002 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.list002 li {
+    background: url(../images/dot01.gif) no-repeat left 7px;
+    padding: 0 0 0 10px;
+    line-height: 20px;
+    float: left;
+}
+
+.list002 .sj {
+    color: #56bcce;
+}
+
+.list003 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.list003 li {
+    padding: 0 10px 0 0;
+    line-height: 16px;
+    float: left;
+}
+
+.list003 .sj {
+    color: #56bcce;
+}
+
+.list003 .img {
+    margin: 0 0 10px 0;
+}
+
+.list003 .title {
+    margin: 0 0 8px 0;
+}
+
+.list004 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.list004 li {
+    padding: 0 10px 13px 0;
+    line-height: 16px;
+    float: left;
+}
+
+.list004 .num {
+    color: #e70000;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    margin: 9px 0 7px 0;
+}
+
+.border_box {
+    width: 678px;
+    border: 7px solid #FAFAF7;
+    margin-top: 20px;
+    padding: 25px 0;
+    position: relative;
+}
+
+.border_box .box_in {
+    margin: 0 auto;
+}
+
+.dline {
+    border-bottom: 1px solid #f2f3f4;
+    width: 692px;
+    margin-top: 12px;
+}
+
+/*120620*/
+.dline_in {
+    border-bottom: 1px solid #f2f3f4;
+    width: 680px;
+    margin-top: 12px;
+}
+
+.dline100 {
+    border-bottom: 1px solid #f2f3f4;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.wSize48 {
+    width: 48px;
+}
+
+.wSize66 {
+    width: 66px;
+}
+
+.wSize106 {
+    width: 106px;
+}
+
+.wSize144 {
+    width: 144px;
+}
+
+.wSize180 {
+    width: 180px;
+}
+
+.wSize220 {
+    width: 220px;
+}
+
+.wSize260 {
+    width: 260px;
+}
+
+.wSize320 {
+    width: 320px;
+}
+
+/*120609 추가*/
+.wSize497 {
+    width: 497px;
+}
+
+.textarea01 {
+    scrollbar-highlight-color: #CCCCCC;
+    scrollbar-shadow-color: #CCCCCC;
+    scrollbar-arrow-color: #CCCCCC;
+    scrollbar-face-color: #FFFFFF;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+}
+
+/* 120611 추가 */
+.prt {
+    position: relative
+}
+
+.pop_cm {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+/* 120626 추가 */
+.hide {
+    display: none;
+}
+
+.fleft {
+    margin-top: 20px;
+}
+
+.fright {
+    margin-top: 20px;
+}
+
+.fright a + a {
+    padding-left: 5px;
+}
+
+/* 130614 추가 */
+.red {
+    color: #dc0000;
+}
+
+/* 140214 tab-menu 추가 */
+.tabmenu {
+    width: 100%;
+    height: 39px;
+    background: url(../images/tab_bgg.gif) repeat-x 0 0;
+    margin-top: 50px;;
+}
+
+.tabmenu ul {
+    width: 692px;
+    margin-left: 1px;
+}
+
+.tabmenu ul li {
+    width: 80px;
+    float: left;
+    margin-top: 1px;
+}
+
+.tabmenu ul li.first_li {
+    width: 57px !important;
+}
+
+.tabmenu ul li a {
+    display: block;
+    width: 100%;
+}

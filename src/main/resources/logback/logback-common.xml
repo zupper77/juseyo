@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <included>
+    <property name="team" value="juseyo" />
+    <property name="mybatisLogFile" value="logsssss/${team}-mybatis.log" />
+    <property name="wsysLogFile" value="logsssss/${team}-wmplog.log" />
+    <property name="wsysErrorLogFile" value="logsssss/${team}-wmplog-error.log" />
+
     <!-- Concole Log -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} [%file:%line] - %msg%n</pattern>
         </encoder>
     </appender>
-    
-    <!-- Spring Log -->
-    <appender name="SYS" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>${jboss.server.log.dir}/spring-log.log</File>
+
+    <!-- Mybatis Log -->
+    <appender name="MYBATIS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${mybatisLogFile}</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${jboss.server.log.dir}/spring-log.log.%d{yyyyMMdd}.log</fileNamePattern>
+            <fileNamePattern>${mybatisLogFile}.%d{yyyyMMdd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <!-- <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>50MB</maxFileSize>
+        </triggeringPolicy> -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%date %level %logger{36} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 패키지 Log -->
+    <appender name="WSYS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${wsysLogFile}</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${wsysLogFile}.%d{yyyyMMdd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <!-- <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
@@ -21,35 +41,34 @@
             <pattern>%date %level %logger{10} [%file:%line] %msg%n</pattern>
         </encoder>
     </appender>
-    <!--
-    <logger name="org.springframework.core" level="INFO" additivity="false">
-    	<appender-ref ref="SYS" />
-    	<appender-ref ref="STDOUT" />
-    </logger>
-    
-    <logger name="org.springframework.beans" level="INFO" additivity="false">
-    	<appender-ref ref="SYS" />
-    	<appender-ref ref="STDOUT" />
-    </logger>
-    
-    <logger name="org.springframework.context" level="INFO" additivity="false">
-    	<appender-ref ref="SYS" />
-    	<appender-ref ref="STDOUT" />
+    <appender name="WSYS-ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${wsysErrorLogFile}</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${wsysErrorLogFile}.%d{yyyyMMdd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <!-- <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>50MB</maxFileSize>
+        </triggeringPolicy> -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%date %level %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+    </appender>
+
+    <!-- SQL -->
+    <logger name="sql" level="DEBUG" additivity="false">
+        <appender-ref ref="MYBATIS" />
+        <appender-ref ref="WSYS-ERROR" />
+        <appender-ref ref="STDOUT" />
     </logger>
 
-    <logger name="org.springframework.web" level="INFO" additivity="false">
-    	<appender-ref ref="SYS" />
-    	<appender-ref ref="STDOUT" />
-    </logger>
-    -->
-    <!-- Spring Log LEVEL 변경 -->
-    <logger name="org.springframework" level="WARN" additivity="false">
-        <appender-ref ref="SYS" />
+    <logger name="com.juseyo" level="DEBUG" additivity="false">
+        <appender-ref ref="WSYS" />
+        <appender-ref ref="WSYS-ERROR" />
         <appender-ref ref="STDOUT" />
     </logger>
-    
-    <root level="ERROR">
-        <appender-ref ref="STDOUT" />
-    </root>
 
 </included>

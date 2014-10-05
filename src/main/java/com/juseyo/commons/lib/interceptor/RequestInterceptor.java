@@ -8,21 +8,8 @@
  */
 package com.juseyo.commons.lib.interceptor;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
+import com.juseyo.commons.lib.messages.common.MessageSetter;
+import com.juseyo.commons.lib.utility.LogUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -37,8 +24,19 @@ import org.springframework.validation.support.BindingAwareModelMap;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.juseyo.commons.lib.messages.common.MessageSetter;
-import com.juseyo.commons.lib.utility.LogUtil;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 /**
 * @brief 	RequestInterceptor
@@ -63,14 +61,14 @@ public class RequestInterceptor {
 	/**
 	 * 모든 controller호출에 대한 return log 위한 pointcut 선언 
 	 */
-	@Pointcut("execution(* com.wemakeprice..*Controller*.*(..))")
+	@Pointcut("execution(* com.juseyo..*Controller*.*(..))")
 	public void call4ControllerLog() {}
 
 	
 	/**
 	 * 모든 controller에서 확장자를 통한 Tiles2 환경설정 
 	 */
-	@Pointcut("execution(* com.wemakeprice..*Controller*.*(..))")
+	@Pointcut("execution(* com.juseyo..*Controller*.*(..))")
 	public void afterConfiguresController() {}
 	
 	
@@ -82,7 +80,6 @@ public class RequestInterceptor {
 	 */
 	@AfterReturning("call4ControllerLog()")
 	public void _afterLog(JoinPoint joinPoint)  throws Exception  {
-		
 		Locale _locale = null;
 		BindingAwareModelMap _model = null;
 		HttpServletRequest _request = null;
@@ -125,30 +122,24 @@ public class RequestInterceptor {
 	@After("afterConfiguresController()")
 	public void _beforeTilesConfigures(JoinPoint joinPoint) throws Exception {
 		String uri = null;
-		
+
 		tilesUrlBasedViewResolver.clearCache();
-		tilesUrlBasedViewResolver.setTilesDefinitionName("gos");
+		tilesUrlBasedViewResolver.setTilesDefinitionName("default");
 		
 		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 		uri = request.getRequestURI();
-				
-		if(uri.endsWith("wmp")){
+
+		if(uri.endsWith(".do")){
 			tilesUrlBasedViewResolver.clearCache();
 			tilesUrlBasedViewResolver.setTilesDefinitionName("default");
 		} else if(uri.endsWith(".dash")){
 			tilesUrlBasedViewResolver.clearCache();
 			tilesUrlBasedViewResolver.setTilesDefinitionName("dashboard");
-		} else if(uri.endsWith(".gos")){
-			tilesUrlBasedViewResolver.clearCache();
-			tilesUrlBasedViewResolver.setTilesDefinitionName("gos");
 		} else if(uri.endsWith(".pop")){
 			tilesUrlBasedViewResolver.clearCache();
 			tilesUrlBasedViewResolver.setTilesDefinitionName("popup");
-        } else if(uri.endsWith(".we")){
-            tilesUrlBasedViewResolver.clearCache();
-            tilesUrlBasedViewResolver.setTilesDefinitionName("we");
         }
-	}	
+	}
 	
 	 /**
 	 * @brief		return parsing : 리턴데이터를 로그에 남기기 위함  

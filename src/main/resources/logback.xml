@@ -1,35 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="300 seconds">
-	
     <include resource="logback/logback-common.xml" />
-    
-    <!-- 개발 1팀 xml 호출 -->
-	<if condition='"${team.type}".equals("alpha")'>
-		<then>
-    		<include resource="logback/logback-alpha.xml" />
-    	</then>
-    </if>
-    
-    <!-- 개발 2팀 xml 호출 -->
-    <if condition='"${team.type}".equals("bravo")'>
-		<then>
-    		<include resource="logback/logback-bravo.xml" />
-    	</then>
-    </if>
-    
-    <!-- 개발 3팀 xml 호출 -->
-    <if condition='"${team.type}".equals("charlie")'>
-		<then>
-    		<include resource="logback/logback-charlie.xml" />
-    	</then>
-    </if>
-    
-    <if condition='"${team.type}".equals("all")'>
-		<then>
-    		<include resource="logback/logback-alpha.xml" />
-    		<include resource="logback/logback-bravo.xml" />
-    		<include resource="logback/logback-charlie.xml" />
-    	</then>
-    </if>
-    
 </configuration>

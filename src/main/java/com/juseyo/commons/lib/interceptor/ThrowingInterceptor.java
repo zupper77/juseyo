@@ -41,7 +41,7 @@ import java.util.Map;
  * @remark SessionNotFoundException, AccessDeniedException 처리 추가
  */
 @Aspect
-public class ThrowingCharlieInterceptor {
+public class ThrowingInterceptor {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 

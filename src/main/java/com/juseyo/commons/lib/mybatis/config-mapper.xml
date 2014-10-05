@@ -8,6 +8,6 @@
         <setting name="mapUnderscoreToCamelCase" value="true" />
     </settings>
 	<typeAliases>
-        <package name="com.wemakeprice" />
+        <package name="com.juseyo" />
 	</typeAliases>
 </configuration>

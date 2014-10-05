@@ -1,12 +1,18 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" contentType="text/html; charset=UTF-8"%>
-<div class="titWrap">
-	<h1 id="lnb_menu_name"></h1>
-	<span id="help_doc_area"></span>
-	<div class="location">
-		<img src="${pageContext.request.contextPath}/img/ico_home.gif" alt="홈">
-		<span id="lnb_1_depth"></span>
-		<span id="lnb_2_depth"></span> 
-		<span class="current"></span>
-	</div>	
+<h1><a href="/">logo</a></h1>
+<!-- top_link -->
+<div class="top_link">
+    <a href="/kor/member/login.do">로그인</a> l
+    <a href="/kor/member/joinProvis.do">회원가입</a> l
+    <a href="#">공지사항</a> l
+    <a href="/kor/etc/sitemap.do">사이트맵</a>
 </div>
+<!-- /top_link -->
+<!-- nav -->
+<div id="nav">
+    <a href="/kor/short/rentalGuide0.do">수리/설치</a>
+    <a href="/kor/long/long_guide_01.do">복구/복원</a>
+    <a href="/kor/used/r2bList.do">매입/판매</a>
+</div>
+<!-- /nav -->
