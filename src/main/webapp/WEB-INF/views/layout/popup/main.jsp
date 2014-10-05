@@ -9,7 +9,6 @@
     <meta name="keywords" content="<tiles:insertAttribute name="title"/>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><tiles:insertAttribute name="title"/></title>
-    <%@ include file="/WEB-INF/views/common/include.jsp" %>
 </head>
 <body>
 <tiles:insertAttribute name="body"/>
