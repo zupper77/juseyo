@@ -1,6 +1,6 @@
 /*120606 수정*/
 h1 {
-    position: absolute;
+    /*position: absolute;*/
     top: 0px; /* left:153px; */
     z-index: 10;
 }
@@ -1027,8 +1027,8 @@ h1 {
 #contents .cont_top {
     position: relative; /* width:100%; */
     height: 124px;
-    padding: 0 45px 0 55px;
-    background: url('../images/common/tit_bg.gif') repeat-x 0 0;
+    /*padding: 0 45px 0 55px;*/
+    background: url('/img/tit_bg.gif') repeat-x 0 0;
 }
 
 #contents .cont_top .path {

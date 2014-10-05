@@ -16,18 +16,18 @@
 <div id="wrap" class="bg1" style="height: 1197px;">
     <div class="wrapbody">
         <!--Header-->
-        <div id="headerwrap" class="person header">
-            <div id="header" calss="person main">
+        <div id="headerwrap" class="person main">
+            <div id="header" class="main">
                 <tiles:insertAttribute name="header"/>
             </div>
         </div>
         <div id="containerwrap" class="sub">
             <!-- container -->
             <div id="container" class="sub">
-                <div class="cont_top">
-                    <tiles:insertAttribute name="bodyTop"/>
-                </div>
                 <div id="contents">
+                    <div class="cont_top">
+                        <tiles:insertAttribute name="bodyTop"/>
+                    </div>
                     <tiles:insertAttribute name="body"/>
                 </div>
             </div>
@@ -36,9 +36,7 @@
         <div id="wrap_re">
             <div class="resarea" style="display: block;">
                 <div class="openbox" style="height: 1736px;">
-                    <p class="mv1">Button1</p>
-                    <p class="im_1">Button2</p>
-                    <p class="im_2">Button3</p>
+                    <tiles:insertAttribute name="menu"/>
                 </div>
             </div>
         </div>
@@ -50,9 +48,6 @@
     </div>
 </div>
 </div>
-<!-- /wrap -->
-
 <%--<img src="${pageContext.request.contextPath}/img/loading.gif" alt="" class="loading">--%>
 </body>
-
 </html>

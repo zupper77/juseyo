@@ -3,10 +3,10 @@
 <h1><a href="/">logo</a></h1>
 <!-- top_link -->
 <div class="top_link">
-    <a href="/kor/member/login.do">로그인</a> l
-    <a href="/kor/member/joinProvis.do">회원가입</a> l
-    <a href="#">공지사항</a> l
-    <a href="/kor/etc/sitemap.do">사이트맵</a>
+    <a href="/login.do">로그인</a> l
+    <a href="/join.do">회원가입</a> l
+    <a href="/notice/noticeList.do">공지사항</a> l
+    <a href="/etc/sitemap.do">사이트맵</a>
 </div>
 <!-- /top_link -->
 <!-- nav -->
