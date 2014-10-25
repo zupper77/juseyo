@@ -18,10 +18,6 @@ public class CertificationInterceptor extends HandlerInterceptorAdapter {
 
         String requestUrl = request.getRequestURI().toString();
         String contextPath = request.getContextPath();
-        
-        System.out.println("requestUrl-->"+requestUrl);
-        System.out.println("contextPath-->"+contextPath);
-
         return super.preHandle(request, response, handler);
     }
 

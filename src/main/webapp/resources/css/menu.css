@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-#cssmenu,
+#cssmenu {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a,

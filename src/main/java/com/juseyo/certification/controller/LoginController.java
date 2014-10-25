@@ -28,4 +28,12 @@ public class LoginController {
 //        loginService.setTargetUrl(request);
         return "/login/login";
     }
+
+
+    @RequestMapping(value = "/join", method = RequestMethod.GET)
+    @IgnoreLoginCheck
+    public String join(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        return "/login/join";
+    }
+
 }

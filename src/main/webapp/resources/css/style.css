@@ -1,8 +1,5 @@
-@import url(default.css);
-/*@import url(common.css);*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(layout.css);
-@import url(table.css);
+@import url(default.css);
 @import url(contents.css);
-/*@import url(sub_hhw.css);*/
-/*@import url(info.css);*/
-/*@import url(member.css);*/
+@import url(table.css);

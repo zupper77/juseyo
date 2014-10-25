@@ -129,6 +129,11 @@ public class RequestInterceptor {
 		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 		uri = request.getRequestURI();
 
+        if("/".equals(uri)){
+            tilesUrlBasedViewResolver.clearCache();
+            tilesUrlBasedViewResolver.setTilesDefinitionName("dashboard");
+        }
+
 		if(uri.endsWith(".do")){
 			tilesUrlBasedViewResolver.clearCache();
 			tilesUrlBasedViewResolver.setTilesDefinitionName("default");

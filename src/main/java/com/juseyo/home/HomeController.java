@@ -17,22 +17,23 @@ import java.util.Locale;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
 
 	/**
-	 * 테스트를 위한 Controller
+	 * Home Page
 	 */
 	@RequestMapping(value = "/" )
 	public String home(Locale locale, Model model)  throws Exception {
 		logger.info("Welcome home! The client locale is {}.", locale);
-
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-
 		String formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
-
-		return "hello";
+		return "index";
 	}
 
+
+    @RequestMapping(value = "/sitemap.do" )
+    public String sitemap(Locale locale, Model model)  throws Exception {
+        return "etc/sitemap";
+    }
 }

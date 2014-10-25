@@ -893,7 +893,7 @@ h1 {
     font-weight: normal;
     text-align: left;
     text-indent: 0px;
-    background: #fbfbfb url('/resources/images/common/bg_tb_right.gif') repeat-y right top !important;
+    background: #fbfbfb url('/resources/img/common/bg_tb_right.gif') repeat-y right top !important;
 }
 
 #contents .short_dri02 table .first {
@@ -1028,7 +1028,7 @@ h1 {
     position: relative; /* width:100%; */
     height: 124px;
     /*padding: 0 45px 0 55px;*/
-    background: url('/img/tit_bg.gif') repeat-x 0 0;
+    background: url('/resources/img/tit_bg.gif') repeat-x 0 0;
 }
 
 #contents .cont_top .path {
@@ -1039,7 +1039,7 @@ h1 {
 #contents .cont_top .path li {
     float: left;
     padding: 0 0 0 17px;
-    background: url('../images/common/bl01.gif') no-repeat 8px 3px;
+    background: url('/resources/img/bl01.gif') no-repeat 8px 3px;
     word-spacing: 2px;
     font-size: 9px;
     font-family: 'dotum';

@@ -467,7 +467,7 @@
                 </includes>
                 <filtering>false</filtering>
             </resource>
-            
+
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <includes>
@@ -476,7 +476,7 @@
                     <include>**/*.properties</include>
                 </includes>
                 <filtering>false</filtering>
-            </resource>            
+            </resource>
         </resources>
     </build>
     <name>www</name>
