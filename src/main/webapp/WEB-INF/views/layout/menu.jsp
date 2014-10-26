@@ -1,0 +1,1 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><%@ page session="false" contentType="text/html; charset=UTF-8"%><p class="im_1"><a href="/call/callList.do">콜목록</a></p><p class="im_2">콜등록</p><p class="im_3">처리평가</p><p class="im_4">파트너</p><p class="im_5">App</p><p class="im_6">Etc</p>

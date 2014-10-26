@@ -5,11 +5,11 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="WEMAKEPRICE GOS">
-<meta name="keywords" content="WEMAKEPRICE GOS">
+<meta name="description" content="JUSEYO">
+<meta name="keywords" content="JUSEYO">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="favicon.png">
-<title>WEMAKEPRICE GOS</title>
+<title><tiles:getAsString name="title"/></title>
 
 <%@ include file="/WEB-INF/views/common/include.jsp"%>
 

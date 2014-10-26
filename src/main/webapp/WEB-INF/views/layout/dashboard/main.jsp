@@ -25,9 +25,6 @@
             <!-- container -->
             <div id="container" class="main">
                 <div id="contents">
-                    <div class="cont_top">
-                        <tiles:insertAttribute name="bodyTop"/>
-                    </div>
                     <tiles:insertAttribute name="body"/>
                 </div>
             </div>

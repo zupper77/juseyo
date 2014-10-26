@@ -15,9 +15,8 @@
 
     <definition name=".dashboard" template="/WEB-INF/views/layout/dashboard/main.jsp" extends=".main">
         <put-attribute name="header" value="/WEB-INF/views/layout/dashboard/header.jsp"/>
-        <put-attribute name="bodyTop" value="/WEB-INF/views/layout/dashboard/bodyTop.jsp"/>
         <put-attribute name="footer" value="/WEB-INF/views/layout/dashboard/footer.jsp"/>
-        <put-attribute name="menu" value="/WEB-INF/views/layout/dashboard/menu.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp"/>
         <put-attribute name="body" value=""/>
     </definition>
 
@@ -25,7 +24,7 @@
         <put-attribute name="header" value="/WEB-INF/views/layout/default/header.jsp"/>
         <put-attribute name="bodyTop" value="/WEB-INF/views/layout/default/bodyTop.jsp"/>
         <put-attribute name="footer" value="/WEB-INF/views/layout/default/footer.jsp"/>
-        <put-attribute name="menu" value="/WEB-INF/views/layout/default/menu.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp"/>
         <put-attribute name="body" value=""/>
     </definition>
 

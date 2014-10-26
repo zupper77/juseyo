@@ -1,289 +1,3 @@
-/*
- * Nanum Gothic (Korean) http://www.google.com/webfonts/earlyaccess
- */
-@font-face {
-    font-family: 'Nanum Gothic';
-    font-style: normal;
-    font-weight: 700;
-    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot);
-    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff2) format('woff2'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff) format('woff'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Nanum Gothic';
-    font-style: normal;
-    font-weight: 400;
-    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot);
-    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Nanum Gothic';
-    font-style: normal;
-    font-weight: 800;
-    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot);
-    src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff2) format('woff2'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff) format('woff'),
-    url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.ttf) format('truetype');
-}
-@charset "utf-8";
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    line-height: 16px;
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #333;
-    background: none;
-}
-/*
- * 버튼 메뉴 CSS
- */
-.type {
-    width: 510px;
-    margin: 0 auto 24px;
-    border-bottom: 1px solid #e1e1e1
-}
-
-.type ul {
-    width: 508px;
-    padding: 0;
-    border: 1px solid #d5d7db;
-    background: #f7f7f7
-}
-
-.type ul:after {
-    display: block;
-    clear: both;
-    height: 0;
-    content: '';
-    zoom:1}
-
-.type li {
-    float: left;
-    width: 101px;
-    border-left: 1px solid #e6e8ea
-}
-
-.type li a {
-    display: block;
-    height: 52px;
-    border-top: 1px solid #fdfdfd;
-    border-bottom: 1px solid #fdfdfd;
-    background: #f7f7f7;
-    font-size: 13px;
-    line-height: 51px;
-    text-align: center;
-    color: #686871
-}
-
-.type li a span {
-    display: inline-block;
-    overflow: hidden;
-    width: auto;
-    line-height: 999em;
-    vertical-align: top;
-    background-image: url(../img/sp.png);
-    background-repeat: no-repeat;
-    height: 23px;
-    margin: 14px 5px 0 0
-}
-
-/*
- * 왼쪽 고정 메뉴
- */
-.openbox {
-    width: 125px;
-    height: 100%;
-    overflow: hidden;
-    position: fixed;
-    _position: absolute;
-    background: url(/resources/img/leftmenu_bg.png) repeat-y 12px center;
-}
-
-.openbox img {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.openbox .mv1 {
-    position: relative;
-    top: 102px;
-    left: 18px;
-}
-
-.openbox .mv1 a:hover {
-}
-
-
-.openbox .im_1 {
-    position: relative;
-    top: 125px;
-    left: 28px;
-}
-
-.openbox .im_2 {
-    position: relative;
-    top: 175px;
-    left: 28px;
-}
-.openbox .im_3 {
-    position: relative;
-    top: 225px;
-    left: 28px;
-}
-.openbox .im_4 {
-    position: relative;
-    top: 275px;
-    left: 28px;
-}
-.openbox .im_5 {
-    position: relative;
-    top: 325px;
-    left: 28px;
-}
-.openbox .im_6 {
-    position: relative;
-    top: 375px;
-    left: 28px;
-}
-
-.openbox {
-    width: 125px;
-    margin-top: -1px;
-    height: 100%;
-    overflow: hidden;
-    position: fixed;
-    _position: absolute;
-    background: url(/resources/img/leftmenu_bg.png) repeat-y 12px center;
-}
-
-
-
-.form {
-    padding: 20px 39px 0 39px
-}
-
-.form table {
-width: 100%;
-border-top: 1px solid #e6e6e6;
-border-left: 1px solid #e6e6e6
-}
-
-.form table:lang(ja) {
-    width: 878px
-}
-
-.form table th {
-    border-bottom: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
-    background: #f8f8f8;
-    text-align: left;
-    font-weight: normal;
-    letter-spacing: -1px
-}
-
-.form table th .th {
-    display: inline-block;
-    font-size: 14px;
-    color: #666666;
-    padding: 20px 30px 16px 30px
-}
-
-.form table td {
-    border-bottom: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6
-}
-
-.form table td .td {
-    display: block;
-    position: relative;
-    width: 549px;
-    font-size: 14px;
-    color: #bbbbbb;
-    padding: 15px 30px 16px 30px
-}
-
-.form table td .td label.checkbox {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    display: block;
-    overflow: hidden
-}
-
-.form table td .td label.checkbox span {
-    float: left;
-    border-left: 1px solid #e6e6e6;
-    height: 25px;
-    padding: 3px 7px 0 23px;
-    color: #505050
-}
-
-.form table td .td label.checkbox button {
-    float: left;
-    margin-top: 0
-}
-
-.form table td .td label.checkbox.small {
-    position: absolute;
-    top: 17px;
-    right: 30px;
-    display: block;
-    overflow: hidden
-}
-
-.form table td .td label.checkbox.small span {
-    float: left;
-    border-left: 1px solid #e6e6e6;
-    height: 25px;
-    padding: 1px 7px 0 23px;
-    color: #505050
-}
-
-.form table td .file {
-    position: relative;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0
-}
-
-.form table td .input-file {
-    position: absolute;
-    top: 9px;
-    right: 30px
-}
-
-.form table td .input-file button {
-    width: 108px;
-    height: 32px;
-    border: 0;
-    background: url(http://img2.kakao.co.kr/assets/btn/btn_set-edaaffd8da26297e321953d5e3a46da1.png) no-repeat -392px -1071px
-}
-
-.form table td .input-file button:hover {
-    background: url(http://img2.kakao.co.kr/assets/btn/btn_set-edaaffd8da26297e321953d5e3a46da1.png) no-repeat -392px -1029px
-}
-
-
-
-
-
-
-
 /****************************************************************************
  * CSS 정리 필요....
  ****************************************************************************/
@@ -1867,13 +1581,13 @@ select {
 
 /** {margin:0; padding:0;}*/
 
-/*html {height:100%;}*/
-/*body {*/
-    /*height:100%;*/
-    /*font-size:75%;*/
-    /*font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;*/
-    /*color:#666;*/
-/*}*/
+html {height:100%;}
+body {
+    height:100%;
+    font-size:75%;
+    font-family:'NanumGothic','맑은고딕','Malgun Gothic','MGothic', sans-serif,"돋움",Dotum,"굴림",Gulim;
+    color:#666;
+}
 
 
 #wrap_re {
@@ -1903,7 +1617,12 @@ select {
     z-index: 999;
 }
 
-
+/*120606 수정*/
+h1 {
+    /*position: absolute;*/
+    top: 0px; /* left:153px; */
+    z-index: 10;
+}
 
 /*120625 수정*/
 #header .top_link {
@@ -1999,6 +1718,17 @@ select {
 
 #main .notice #area-roatation {
     margin: 0 0 0 125px;
+}
+
+#main .sns {
+    position: absolute;
+    top: 313px;
+    right: 0; /* right:48px; */
+}
+
+/*130625 수정*/
+#main .sns a {
+    display: inline-block;
 }
 
 #main .banner {
@@ -5138,6 +4868,7 @@ select {
 #contents .dilivery-service .tbl_view th.tit {
     background: #FBFBFB url('http://www.ktkumhorent.com/resources/images/common/pageing_bg.gif') repeat-y right 0;
     font-size: 11px;
+    font-family: dotum;
 }
 
 #contents .dilivery-service .bgpoint {
@@ -5157,6 +4888,7 @@ select {
     text-align: left;
     color: #333;
     font-size: 11px;
+    font-family: dotum, sans-serif;
 }
 
 #contents .dilivery-service .list02 {
@@ -5234,6 +4966,7 @@ select {
     border: 1px solid #e9e9e9;
     font-weight: normal;
     font-size: 11px;
+    font-family: 돋 움, dotum;
     text-align: center;
 }
 
@@ -5247,6 +4980,7 @@ select {
     padding: 9px 0 6px 0;
     color: #333;
     font-size: 11px;
+    font-family: 돋 움, dotum;
     text-align: center;
     border: 1px solid #e9e9e9;
 }
@@ -5514,14 +5248,173 @@ select {
     left: 280px;
 }
 
+/*  제주 이벤트 페이지 140603  */
+#wrap.jeju {
+    height: 4190px;
+}
+
+#wrap.jeju .wrapbody {
+    width: 1155px;
+}
+
+#wrap.jeju #headerwrap.person.sub {
+    width: 1135px;
+    margin: 0;
+    background: none;
+}
+
+#wrap.jeju #headerwrap #header.sub {
+    padding-left: 55px;
+    background: none;
+}
+
+#wrap.jeju #containerwrap {
+    margin-left: 20px;
+    height: auto;
+    width: 1135px;
+}
+
+#wrap.jeju #containerwrap #container #contents {
+    padding-bottom: 45px;
+    width: 100%;
+}
+
+#wrap.jeju #footerwrap {
+    width: 1155px;
+    margin: 0;
+    height: 190px;
+}
+
+#wrap.jeju #footerwrap #footer {
+    margin-left: 53px;
+}
+
+#wrap.jeju #containerwrap #container #contents {
+    width: 100%;
+}
+
+#wrap.jeju .program {
+    position: relative;
+}
+
+#wrap.jeju .program .banner {
+    position: relative;
+    overflow: hidden;
+}
+
+#wrap.jeju .program .banner li {
+    float: left;
+    display: block;
+}
+
+#wrap.jeju .program .box_01, #wrap.jeju .program .box_02, #wrap.jeju .program .box_03 {
+    position: absolute;
+    top: 144px;
+    left: 76px;
+    width: 981px;
+    height: 613px;
+}
+
+#wrap.jeju .program .arr {
+    position: absolute;
+    top: 490px;
+    left: 20px;
+}
+
+#wrap.jeju .program .arr_1 {
+    position: absolute;
+    top: 490px;
+    right: 20px;
+}
 
 .mb45 {
     margin-bottom: 45px !important;
 }
 
+#wrap.pop_jeju {
+    width: 980px;
+}
+
+#wrap.pop_jeju #jeju_pop_area {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+#wrap.pop_jeju .table_jeju1 {
+    margin-bottom: 30px;
+    width: 920px;
+    table-layout: fixed;
+}
+
+#wrap.pop_jeju .table_jeju1 th {
+    padding-top: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #ececec;
+}
+
+#wrap.pop_jeju .table_jeju1 td {
+    padding: 14px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+#wrap.pop_jeju #jeju_pop_area .social_area {
+    padding: 20px 0;
+}
+
+#wrap.pop_jeju #jeju_pop_area .clause {
+    padding: 20px;
+    margin-bottom: 5px;
+    height: 138px;
+    overflow-y: auto;
+    border: 1px solid #ececec;
+    vertical-align: middle;
+}
+
+#wrap.pop_jeju #jeju_pop_area .gopage .fleft {
+    margin-top: 0;
+}
+
+#wrap.pop_jeju #jeju_pop_area .clause1 {
+    padding: 20px;
+    margin-bottom: 5px;
+    height: 335px;
+    overflow-y: auto;
+    border: 1px solid #ececec;
+}
+
+/* 140613 event_pop01 */
+#wrap.pop_jeju .week_date img {
+    vertical-align: middle;
+    margin-left: 15px
+}
+
+#wrap.pop_jeju .scroll_area {
+    width: 880px;
+    height: 115px;
+    overflow-y: scroll;
+    border: 1px solid #efefef;
+    padding: 10px;
+    margin-top: 15px !important;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #494949;
+}
+
+#wrap.pop_jeju .scroll_area .red {
+    color: #dc0000
+}
+
+#wrap.pop_jeju .t_right {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
 
 /*  footer */
 .foot_con {
+    font-family: "Malgun Gothic", dotum, sans-serif;
     position: relative;
 }
 
@@ -5532,12 +5425,14 @@ select {
 .foot_con p {
     font-size: 10px;
     color: #666;
+    font-family: "Malgun Gothic", dotum, sans-serif;
 }
 
 .foot_con li {
     font-size: 10px;
     color: #666;
     vertical-align: middle;
+    font-family: "Malgun Gothic", dotum, sans-serif;
 }
 
 .foot_first {

@@ -26,21 +26,21 @@
             <div id="container" class="sub">
                 <div id="lnb">
                     <link rel="stylesheet" type="text/css" href="/resources/css/sub.css">
-                    <link rel="stylesheet" type="text/css" href="/resources/css/guide_01.css">
                     <script type="text/javascript">
                         $(document).ready(function(){
 
                         });
                     </script>
                     <div class="menu">
-                        <a href="/kor/rental/rental_01.do"><img src="/resources/img/left/4_1_on.gif" id="4-1-title" alt="금융 렌탈" class="hoverimgg"></a>
-                        <a href="/kor/rental/rental_02.do"><img src="/resources/img/left/4_2.gif" id="4-2-title" alt="계측기 렌탈" class="hoverimgg"></a>
-                        <a href="/kor/rental/rental_03.do"><img src="/resources/img/left/4_3.gif" id="4-3-title" alt="OA 렌탈" class="hoverimgg"></a>
-                        <a href="/kor/rental/rental_07.do"><img src="/resources/img/left/4_7.gif" id="4-7-title" alt="일반렌탈 지점안내" class="hoverimgg"></a>
+                        <a href="/kor/rental/rental_01.do">서브메뉴_001</a>
+                        <a href="/kor/rental/rental_02.do">서브메뉴_002</a>
+                        <a href="/kor/rental/rental_03.do">서브메뉴_003</a>
+                        <a href="/kor/rental/rental_07.do">서브메뉴_004</a>
                     </div>
-                    <div class="long_ban"><a href="/kor/long/long_03.do"><img src="/resources/images/left/long_ban.gif" alt="장기렌터카 견적신청"></a>
-                        <a href="/kor/short/carshare.do"><img src="/resources/images/left/long_ban02.gif" alt="카쉐어링(그린카) 바로가기"></a>
-                        <a href="/kor/long/long_bizcare.do"><img src="/resources/images/left/long_ban01.gif" alt="장기렌터카 비즈케어"></a>
+                    <div class="long_ban">
+                        <a href="/kor/long/long_03.do">서브하단메뉴_001</a><br/>
+                        <a href="/kor/short/carshare.do">서브하단메뉴_002</a><br/>
+                        <a href="/kor/long/long_bizcare.do">서브하단메뉴_003</a>
                     </div>
                 </div>
                 <div id="contents">
